@@ -1,0 +1,23 @@
+{
+  "name": "daniel-resume-cli",
+  "version": "0.0.1",
+  "description": "A CLI to show my work experience, tech skills and personal interests.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "bin": {
+    "daniel-resume": "index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
