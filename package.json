@@ -1,7 +1,7 @@
 {
   "name": "daniel-resume",
-  "version": "0.0.1",
-  "description": "A CLI to show my work experience, tech skills and personal interests, npx daniel-resume",
+  "version": "0.0.2",
+  "description": "A CLI to show my work experience, tech skills and personal interests, just type npx daniel-resume",
   "type": "module",
   "main": "index.js",
   "scripts": {
