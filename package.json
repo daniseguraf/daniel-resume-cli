@@ -1,7 +1,7 @@
 {
   "name": "daniel-resume",
   "version": "0.0.1",
-  "description": "A CLI to show my work experience, tech skills and personal interests.",
+  "description": "A CLI to show my work experience, tech skills and personal interests, npx daniel-resume",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,11 @@
   "bin": {
     "daniel-resume": "index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "node.js",
+    "resume"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -37,9 +37,6 @@ const skillsLine2 = chalk.white(
 const aboutMeTitle = 'About Me';
 
 // prints
-console.log(
-  '--------------------------------------------------------------------------------'
-);
 const headlineModule = boxen(headline(mainTitle), headlineBox);
 console.log(headlineModule);
 
