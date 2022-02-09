@@ -16,7 +16,7 @@ const text = chalk.white;
 const link = chalk.yellow.underline;
 
 // Content
-const newLine = '\b';
+const newLine = '\n';
 
 const mainTitle = `Daniel Segura Fang - Frontend Developer 🚀`;
 
