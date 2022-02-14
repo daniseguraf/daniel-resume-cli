@@ -15,6 +15,7 @@
     "node.js",
     "resume"
   ],
+  "repository": "daniseguraf/daniel-resume-cli",
   "author": {
     "name": "Daniel Segura",
     "email": "hello@danielsegura.dev",
