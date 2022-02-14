@@ -1,6 +1,6 @@
 {
   "name": "daniel-resume",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "A CLI to show my work experience, tech skills and personal interests, just run `npx daniel-resume` in the terminal",
   "type": "module",
   "main": "index.js",
