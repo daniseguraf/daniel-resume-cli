@@ -15,7 +15,11 @@
     "node.js",
     "resume"
   ],
-  "author": "",
+  "author": {
+    "name": "Daniel Segura",
+    "email": "hello@danielsegura.dev",
+    "url": "https://www.linkedin.com/in/daniel-segura-fang/"
+  },
   "license": "ISC",
   "dependencies": {
     "boxen": "^6.2.1",
