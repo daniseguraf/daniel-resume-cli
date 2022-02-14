@@ -1,6 +1,6 @@
 {
   "name": "daniel-resume",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A CLI to show my work experience, tech skills and personal interests, just type npx daniel-resume in the terminal",
   "type": "module",
   "main": "index.js",
@@ -19,7 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "boxen": "^6.2.1",
-    "chalk": "^5.0.0"
+    "chalk": "^5.0.0",
+    "clear-any-console": "^1.16.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

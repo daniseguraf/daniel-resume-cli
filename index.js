@@ -1,7 +1,9 @@
 #!/usr/bin/env node
+import clearConsole from 'clear-any-console';
 import chalk from 'chalk';
 import boxen from 'boxen';
 
+clearConsole();
 // Styles
 const headline = chalk.white.bold;
 const headlineBox = {
