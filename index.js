@@ -1,81 +1,86 @@
 #!/usr/bin/env node
-import clearConsole from 'clear-any-console';
 import chalk from 'chalk';
 import boxen from 'boxen';
+import init from './utils/init.js';
 
-clearConsole();
-// Styles
-const headline = chalk.white.bold;
-const headlineBox = {
-  padding: 1.5,
-  margin: { top: 1, bottom: 1 },
-  borderStyle: 'double',
-  borderColor: 'magenta',
-};
+init();
 
-const heading = chalk.bold.cyan;
-const text = chalk.white;
-const link = chalk.yellow.underline;
-const bold = chalk.bold;
+(function () {
+  const log = console.log;
 
-// Content
-const newLine = '\n';
-const textSpace = '\b';
+  // Styles
+  const headline = chalk.white.bold;
+  const headlineBox = {
+    padding: 1.5,
+    margin: { top: 1, bottom: 1 },
+    borderStyle: 'double',
+    borderColor: 'magenta',
+  };
 
-const mainTitle = `Daniel Segura Fang - Frontend Developer 🚀`;
+  const heading = chalk.bold.cyan;
+  const text = chalk.white;
+  const link = chalk.yellow.underline;
+  const bold = chalk.bold;
 
-const contactTitle = 'Contact Information';
-const location = 'Lima, Peru (UTC-5)';
-const email = 'hello@danielsegura.dev';
-const linkedIn = 'https://www.linkedin.com/in/daniel-segura-fang/';
-const github = 'https://github.com/daniseguraf';
+  // Content
+  const newLine = '\n';
+  const textSpace = '\b';
 
-const skillsTitle = 'Tech Skills';
-const skillsLine1 = chalk.white(`React - Typescript - JavaScript - Node.js`);
-const skillsLine2 = chalk.white(
-  `Express - Storybook - Styled-components - Jest`
-);
-const skillsLine3 = chalk.white(`React Testing Library - HTML - CSS - SCSS`);
+  const mainTitle = `Daniel Segura Fang - Frontend Developer 🚀`;
 
-const aboutMeTitle = 'About Me';
+  const contactTitle = 'Contact Information';
+  const location = 'Lima, Peru (UTC-5)';
+  const email = 'hello@danielsegura.dev';
+  const linkedIn = 'https://www.linkedin.com/in/daniel-segura-fang/';
+  const github = 'https://github.com/daniseguraf';
 
-const react = bold('React.js');
-const typescript = bold('TypeScript');
-const javascript = bold('JavaScript');
-const node = bold('Node.js');
-const next = bold('Next.js');
+  const skillsTitle = 'Tech Skills';
+  const skillsLine1 = chalk.white(`React - Typescript - JavaScript - Node.js`);
+  const skillsLine2 = chalk.white(
+    `Express - Storybook - Styled-components - Jest`
+  );
+  const skillsLine3 = chalk.white(`React Testing Library - HTML - CSS - SCSS`);
 
-const meText1 = `Front-end developer with +5 years of experience with a keen eye for design and high UI/UX criteria. I have built highly scalable, modular, maintainable end-to-end solutions using ${react}, ${typescript}, ${javascript}, ${node}, ${next}, among others. My goal is to contribute to building world-class software solutions with highly performant dynamic teams and, at the same time, support and contribute with my experience in the growth of the product, the team, and the company.`;
+  const aboutMeTitle = 'About Me';
 
-const meText2 = `If you believe that I might fit with your interests, please feel free to contact me in LinkedIn or write me to ${email},`;
+  const react = bold('React.js');
+  const typescript = bold('TypeScript');
+  const javascript = bold('JavaScript');
+  const node = bold('Node.js');
+  const next = bold('Next.js');
 
-const meText3 = `Thanks 🙌!`;
+  const meText1 = `Front-end developer with +5 years of experience with a keen eye for design and high UI/UX criteria. I have built highly scalable, modular, maintainable end-to-end solutions using ${react}, ${typescript}, ${javascript}, ${node}, ${next}, among others. My goal is to contribute to building world-class software solutions with highly performant dynamic teams and, at the same time, support and contribute with my experience in the growth of the product, the team, and the company.`;
 
-// prints
-const headlineModule = boxen(headline(mainTitle), headlineBox);
-console.log(headlineModule);
+  const meText2 = `If you believe that I might fit with your interests, please feel free to contact me in LinkedIn or write me to ${email},`;
 
-console.log(heading(contactTitle));
-console.log(text(location));
-console.log(text(email));
-console.log(link(linkedIn));
-console.log(link(github));
+  const meText3 = `Thanks 🙌!`;
 
-console.log(newLine);
+  // prints
+  const headlineModule = boxen(headline(mainTitle), headlineBox);
+  log(headlineModule);
 
-console.log(heading(skillsTitle));
-console.log(text(skillsLine1));
-console.log(text(skillsLine2));
-console.log(text(skillsLine3));
+  log(heading(contactTitle));
+  log(text(location));
+  log(text(email));
+  log(link(linkedIn));
+  log(link(github));
 
-console.log(newLine);
+  log(newLine);
 
-console.log(heading(aboutMeTitle));
-console.log(text(meText1));
-console.log(textSpace);
+  log(heading(skillsTitle));
+  log(text(skillsLine1));
+  log(text(skillsLine2));
+  log(text(skillsLine3));
 
-console.log(text(meText2));
-console.log(textSpace);
+  log(newLine);
 
-console.log(text(meText3));
-console.log(newLine);
+  log(heading(aboutMeTitle));
+  log(text(meText1));
+  log(textSpace);
+
+  log(text(meText2));
+  log(textSpace);
+
+  log(text(meText3));
+  log(newLine);
+})();
