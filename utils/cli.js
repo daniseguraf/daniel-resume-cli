@@ -1,18 +1,27 @@
 import meow from 'meow';
+import chalk from 'chalk';
+
+const green = chalk.green;
+const yellow = chalk.yellow;
+const cyan = chalk.cyan;
 
 const helpText = `
   Usage
-    npx daniel-resume [options]
+    ${green(`npx daniel-resume`)} ${yellow(`[--option]`)} ${cyan(`<command>`)}
 
   Options
-    contact         Show contact info
-    --no-contact    Don't show contact info
-    skills          Show skills info
-    --no-skills     Don't show skills info
-    --debug, -d     Print debug information
+    ${yellow(`--contact`)}        Print contact info
+    ${yellow(`--no-contact`)}     Don't print contact info
+    ${yellow(`--skills`)}         Print skills info
+    ${yellow(`--no-skills`)}      Don't print skills info
+    ${yellow(`-d`)}, ${yellow(`--debug`)}      Print debug information
+    ${yellow(`-v`)}, ${yellow(`--version`)}    Print CLI version
+
+  Commands
+    ${cyan(`help`)}             Print CLI help information
 
   Examples
-    npx daniel-resume --no-contact
+    ${green('npx daniel-resume')} ${yellow(`--no-contact`)}
 `;
 
 const options = {
