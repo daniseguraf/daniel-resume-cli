@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-import meow from 'meow';
 import boxen from 'boxen';
-import init from './utils/init.js';
 import chalk from 'chalk';
 
+import init from './utils/init.js';
 import {
   newLine,
   textSpace,
@@ -22,34 +21,14 @@ import {
   meText2,
   meText3,
 } from './utils/data.js';
-
-const helpText = `
-  Usage
-    npx daniel-resume [options]
-
-  Options
-    contact         Show contact info
-    --no-contact    Don't show contact info
-    skills          Show skills info
-    --no-skills     Don't show skills info
-`;
-
-const options = {
-  importMeta: import.meta,
-  flags: {
-    contact: { type: 'boolean', default: true },
-    skills: { type: 'boolean', default: true },
-  },
-};
-
-const cli = meow(helpText, options);
+import cli from './utils/cli.js';
+import debug from './utils/debug.js';
 
 (function () {
   init();
+  cli.input.includes('help') && cli.showHelp(0);
 
   const log = console.log;
-
-  log(`cli`, cli.flags);
 
   // Styles
   const headline = chalk.white.bold;
@@ -66,6 +45,8 @@ const cli = meow(helpText, options);
   const bold = chalk.bold;
 
   // prints
+  debug(cli.flags.debug);
+
   const headlineModule = boxen(headline(mainTitle), headlineBox);
   log(headlineModule);
 
